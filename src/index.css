@@ -9,7 +9,7 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: white;
-  padding: 15px 20px;
+  padding: 5px 20px;
 }
 
 .logo img {
@@ -79,84 +79,208 @@ body {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
-/* Banner */
-.banner-slider {
-  overflow: hidden;
-  width: 100%;
-  position: relative;
-  height: 1500px;
+/* Contact Us */
+.contact {
+  background-color: lightgray;
+  padding: 50px;
 }
 
-.banners {
-  display: flex;
-  animation: slide 15s infinite;
-  width: 300%;
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  align-items: center;
+  text-align: center;
 }
-
-.banner {
+.container-contact-Us{
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 25px;
-  height: 400px;
-  background-image:url(assets/banner-image.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding: 20px;
+  margin: 10px;
+  background-color: rgb(221, 233, 237);
 }
 
-.banner-info {
-  max-width: 50%;
+.contact-section-Us {
+  flex: 1;
+  margin-right: 20px;
 }
 
-.banner-info h1 {
-  font-size: 2.5em;
-  margin: 0 0 10px;
-  color: #f1f1f1;
+.contact-section-Us h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
-.banner-info p {
-  font-size: 1.2em;
-  margin: 0 0 20px;
+.contact-section-Us p {
+  margin-bottom: 20px;
+  line-height: 1.5;
 }
 
-.banner-info {
-  max-width: 50%;
+.contact-details-Us h3 {
+  font-weight: bold;
+  margin: 10px 0 5px;
 }
 
-.banner-info h1 {
-  font-size: 2.5em;
-  margin: 0 0 10px;
-  color: #f1f1f1;
-  font-style: italic;
+.contact-details-Us p {
+  margin: 5px 0 15px;
 }
 
-.banner-info p {
-  font-size: 1.2em;
-  margin: 0 0 20px;
-  color: #f1f1f1;
-  font-style:oblique;
+.social-links-Us a img {
+  width: 24px;
+  margin-right: 10px;
 }
 
-.btn {
+.form-section-Us {
+  flex: 1;
+}
+
+.form-section-Us h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 85%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
   padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
+  background-color: #3b49df;
+  color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
-.btn:hover {
+form button:hover {
+  background-color: #2a36a3;
+}
+.information-photo-us {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+  background-color: #333; /* Optional background color */
+  background-size: 40px;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 50%; /* Adjust based on design preference */
+}
+
+.text-content h1 {
+  font-size: 54px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.text-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.explore-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 100px;
+}
+
+.explore-button:hover {
   background-color: #0056b3;
 }
 
-.banner-image img {
-  max-width: 100%;
-  height: auto;
+.image-content {
+  flex: 1;
+  max-width: 50%; /* Adjust based on design preference */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.image-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional */
+  object-fit: cover; /* Ensures the image scales nicely */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Banner */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url('assets/banner-image.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #333;
+  padding: 20px 40px;
+  height: 380px;
+}
+
+.banner-content {
+  max-width: 100%;
+}
+
+.banner-title {
+  font-size: 2.5em;
+  margin: 0;
+  margin-right: 180px;
+  color: #fff;
+}
+
+.banner-text {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-top: 10px;
+  margin-right: 150px;
+  color: #fff;
+}
+
+.banner-image {
+  max-width: 40%;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 @keyframes slide {
 }
 .sprite-container {
@@ -432,7 +556,7 @@ h1 {
 }
 
 .left-section h2 {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   margin-top: 20px;
   color:#333;
 }
@@ -468,7 +592,7 @@ h1 {
   background-color: #27cdc0;
   padding: 50px;
   border-radius: 5px;
-  width: 40%;
+  width: 50%;
   color: #fff;
   margin-left: 40px;
 }
@@ -652,4 +776,68 @@ h1 {
   background-color: #333; /* Optional: Light background for emphasis */
   padding: 10px; /* Optional: Add padding around the text */
   border-top: 1px solid #ddd; /* Optional: Add a subtle border above */
+}
+
+
+
+/* Media queries for responsiveness */
+/* Default styles */
+body {
+  background-color: white;
+  font-size: 16px;
+}
+
+/* Styles for devices with a width of 600px or less */
+@media (max-width: 600px) {
+  body {
+      background-color: white;
+      font-size: 14px;
+  }
+}
+
+/* Styles for devices with a width of 601px to 1200px */
+@media (min-width: 601px) and (max-width: 1200px) {
+  body {
+      background-color: white;
+      font-size: 18px;
+  }
+}
+/* Styles for devices with a width of 1201px or more */
+@media (min-width: 1201px) {
+  body {
+      background-color: white;
+      font-size: 20px;
+  }
+}
+/* Styles for devices with a width of 768px or less */
+@media (max-width: 768px) {
+  body {
+      background-color: white;
+      font-size: 14px;
+  }
+  .header{
+    padding: 20px 5%;
+    font-size: 14px;
+    
+  }
+}
+
+@media (max-width: 768px) {
+  
+  .contact-section {
+    padding: 20px 5%;
+  }
+
+  .contact-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-details div {
+    margin-bottom: 10px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
 }

@@ -50,9 +50,9 @@ const footer = () => {
             </div>
             <div>
                 <h3>Factory Address</h3>
-                <p>S. No. 172(P), , Plot No.13C-2, Industrial Park, Phase-II,, Peddapuram, Kakinada District,, Andhra Pradesh 533437, India.
-                <i class="fa-solid fa-envelope"></i>labnova.sales@gmail.com
-                <i class="fa-solid fa-phone"></i>+919949551455</p>
+                <p>S. No. 172(P), , Plot No.13C-2, Industrial Park, Phase-II,, Peddapuram, Kakinada District,, Andhra Pradesh 533437, India.<br/>
+                <i class="fa-solid fa-envelope"></i>labnova.sales@gmail.com<br/>
+                <i class="fa-solid fa-phone"></i>+919949551455</p><br/>
             </div>
         </div>
         <div className="social-icons">

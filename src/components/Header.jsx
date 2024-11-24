@@ -1,34 +1,36 @@
 
+
+
 import React from 'react';
-import{ Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
         <>
             <div className="header">
                 <div className="logo">
-                        <img src="src/assets/logo.png" alt="Labnova Logo" className="logo-img" />
+                    <img src="src/assets/logo.png" alt="Labnova Logo" className="logo-img" />
                 </div>
                 <div className="navbar">
                     <ul className="nav-items">
                         <Link to="/"><li>Home</li></Link>
-                        {/* <li><link>About Us</link></li>
+                        <Link to="/about"><li>About Us</li></Link>
                         <li className="dropdown">
-                            <link to ="/" className="dropbtn">Products ▼</link>
+                            <Link to="/products" className="dropbtn">Products ▼</Link>
                             <ul className="dropdown-menu">
-                                <li><a href="#">Electrolyte Analyzer</a></li>
-                                <li><a href="#">Glucose</a></li>
-                                <li><a href="#">Labchem 7plus</a></li>
-                                <li><a href="#">Labcount 3</a></li>
-                                <li><a href="#">Labcount 5</a></li>
-                                <li><a href="#">Hemoglobin</a></li>
-                                <li><a href="#">Clinical Chemistry Analyzer</a></li>
-                                <li><a href="#">Proflow Box Dengue NS1</a></li>
+                                <Link to="/product/electrolyte-analyzer"><li>Electrolyte Analyzer</li></Link>
+                                <Link to="/product/glucose"><li>Glucose</li></Link>
+                                <Link to="/product/labchem-7plus"><li>Labchem 7plus</li></Link>
+                                <Link to="/product/labcount-3"><li>Labcount 3</li></Link>
+                                <Link to="/product/labcount-5"><li>Labcount 5</li></Link>
+                                <Link to="/product/hemoglobin"><li>Hemoglobin</li></Link>
+                                <Link to="/product/clinical-chemistry-analyzer"><li>Clinical Chemistry Analyzer</li></Link>
+                                <Link to="/product/proflow-box-dengue-ns1"><li>Proflow Box Dengue NS1</li></Link>
                             </ul>
                         </li>
-                        <li><link>Blog</link></li>
-                        <li><link to="/">Careers</link></li> */}
-                        <Link to="/contact" ><li>Contact Us</li></Link>
+                        <Link to="/blog"><li>Blog</li></Link>
+                        <Link to="/careers"><li>Careers</li></Link>
+                        <Link to="/contact"><li>Contact Us</li></Link>
                     </ul>
                 </div>
             </div>
@@ -37,4 +39,3 @@ function Header() {
 }
 
 export default Header;
-

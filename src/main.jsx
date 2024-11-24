@@ -13,6 +13,13 @@ import Contact from './components/contact.jsx';
   {
     path: "/contact",
     element: <Contact/>
+  },
+  {
+    path: "/contact",
+    element: <Contact/>
+  }, {
+    path: "/contact",
+    element: <Contact/>
   }
  ]);
 

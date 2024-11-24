@@ -10,7 +10,7 @@ function Blog() {
                     <img src="src/assets/blog-1.jpeg" alt="Blog Post 1"/>
                     <div class="content-Blog">
                         <h2>World Blood Donor Day</h2>
-                        <p>This is a brief description of the first blog post. It gives an overview of the content.</p>
+                        <p>This is a brief description of the first blog post. It gives an overview of the content.</p><br/>
                         <a href="#">Read More</a>
                     </div>
                 </div>
@@ -24,9 +24,9 @@ function Blog() {
                 </div>
                 <div class="card-Blog">
                     <img src="src/assets/blog-3.jpeg" alt="Blog Post 3"/>
-                    <div class="content">
-                        <h2>World Helth Day</h2>
-                        <p>This is a brief description of the third blog post. It gives an overview of the content.</p>
+                    <div class="content"><br/>
+                        <h2>World Health Day</h2>
+                        <p>This is a brief description of the third blog post. It gives an overview of the content.</p><br/> <br/>
                         <a href="#">Read More</a>
                     </div>
                 </div>
