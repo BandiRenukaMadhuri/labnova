@@ -1,14 +1,12 @@
 
 
 import React from "react";
-import Header from "./Header";
-import footer from "./footer";
+
 
 const Contact = () => {
     return (
         <>
             <div>
-                <Header />
                 <div className="contact">
                     <h2>Get in Touch with Labnova</h2>
                 </div><br />
@@ -61,7 +59,6 @@ const Contact = () => {
   </div>
 </div>
 <div>
-                <footer/>
             </div>
             </div>
         

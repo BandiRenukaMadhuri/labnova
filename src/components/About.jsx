@@ -1,10 +1,9 @@
 import React from "react";
-import Header from "./Header";
+
 
 const About = () => {
     return (
         <div>
-            <Header/>
             <div className="about-Us">
                 <h1>Empowering Diagnostic Innovation</h1>
                 <div className="about-Us-content">
@@ -16,7 +15,6 @@ Labnova has proudly served a diverse range of clients in the healthcare sector, 
                     </div>
 
             </div>
-            <footer/>
         </div>
     )
     
