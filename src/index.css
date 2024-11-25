@@ -780,64 +780,195 @@ h1 {
 
 
 
+
+
+
+
+
+
+
+
+
+
 /* Media queries for responsiveness */
-/* Default styles */
-body {
-  background-color: white;
-  font-size: 16px;
-}
-
-/* Styles for devices with a width of 600px or less */
-@media (max-width: 600px) {
-  body {
-      background-color: white;
-      font-size: 14px;
-  }
-}
-
-/* Styles for devices with a width of 601px to 1200px */
-@media (min-width: 601px) and (max-width: 1200px) {
-  body {
-      background-color: white;
-      font-size: 18px;
-  }
-}
-/* Styles for devices with a width of 1201px or more */
-@media (min-width: 1201px) {
-  body {
-      background-color: white;
-      font-size: 20px;
-  }
-}
-/* Styles for devices with a width of 768px or less */
+/* General Body */
 @media (max-width: 768px) {
   body {
-      background-color: white;
-      font-size: 14px;
-  }
-  .header{
-    padding: 20px 5%;
     font-size: 14px;
-    
+    background-color: #f9f9f9; /* Optional: Light background for smaller devices */
   }
 }
 
+/* Header */
 @media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 5%;
+  }
   
-  .contact-section {
-    padding: 20px 5%;
+  .logo img {
+    max-height: 40px;
   }
 
-  .contact-details {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .nav-items {
+    gap: 10px;
+  }
+}
+
+/* Banner */
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .banner-content {
+    margin: 0;
+  }
+
+  .banner-title {
+    font-size: 1.8em;
+  }
+
+  .banner-text {
+    font-size: 1em;
+  }
+
+  .banner-image {
+    max-width: 80%;
+    height: auto;
+  }
+}
+
+/* Blog */
+@media (max-width: 768px) {
+  .header-Blog h1 {
+    font-size: 2rem;
+    padding: 50px 10px;
+  }
+
+  .container-Blog {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
 
-  .contact-details div {
-    margin-bottom: 10px;
+  .card-Blog {
+    width: 90%;
+  }
+}
+
+/* Contact Section */
+@media (max-width: 768px) {
+  .contact {
+    padding: 20px;
   }
 
+  .container-contact-Us {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-section-Us, .form-section-Us {
+    margin: 0;
+    flex: 1;
+  }
+
+  .information-photo-us {
+    flex-direction: column;
+  }
+
+  .text-content, .image-content {
+    max-width: 100%;
+  }
+
+  .explore-button {
+    margin: 0;
+  }
+}
+
+/* MenuCard */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+/* Submit Form */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .left-section, .right-section {
+    width: 100%;
+    margin: 0;
+  }
+
+  .left-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+/* Team Section */
+@media (max-width: 768px) {
+  .team-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .team-content, .team-image {
+    max-width: 100%;
+  }
+
+  .team-content p {
+    margin-left: 0;
+  }
+
+  .contact-button {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+/* Footer */
+@media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-content div {
+    width: 100%;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+/* Cards (Blog, Menu, etc.) */
+@media (max-width: 768px) {
+  .card-Blog, .card, .card-container {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
   }
 }
