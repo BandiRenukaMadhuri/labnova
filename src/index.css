@@ -1,84 +1,171 @@
 /* General styles */
+/* 
+The `body` style resets the default margin and sets a global font-family to ensure consistency across the site. 
+This style applies to the entire document.
+*/
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+  margin: 0; /* Removes the default margin around the body */
+  font-family: Arial, sans-serif; /* Sets a clean and modern font */
 }
 
+/* Header Section */
+/* 
+The `.header` class styles the top section of the page. It uses flexbox for layout, 
+ensuring alignment and spacing between elements like the logo and navigation bar.
+*/
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: white;
-  padding: 5px 20px;
+  display: flex; /* Enables flexbox for layout */
+  align-items: center; /* Vertically centers items */
+  justify-content: space-between; /* Ensures space between logo and navigation */
+  background-color: white; /* Sets the background color to white */
+  padding: 5px 20px; /* Adds spacing inside the header */
 }
 
+/* Logo styling */
+/* 
+The `.logo img` ensures the logo image scales appropriately without exceeding the max height.
+*/
 .logo img {
-  max-height: 50px;
+  max-height: 50px; /* Limits the height of the logo image */
 }
 
+/* Navbar */
+/* 
+The `.navbar` class organizes navigation items horizontally. 
+The `.nav-items` uses flexbox for spacing and alignment.
+*/
 .navbar {
-  display: flex;
+  display: flex; /* Flex container for horizontal layout */
 }
 
 .navbar .nav-items {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  list-style-type: none;
-
-}
-.navbar .nav-items li {
-  position: relative;
+  display: flex; /* Makes navigation items align horizontally */
+  align-items: center; /* Vertically centers items */
+  gap: 20px; /* Adds spacing between navigation items */
+  list-style-type: none; /* Removes bullets from list items */
 }
 
+/* Navbar links */
+/* 
+The `.nav-items a` styles individual links. It ensures uniform padding, font size, and hover effects.
+*/
 .navbar .nav-items a {
-  color: black;
-  font-size: 18px;
-  padding: 10px 15px;
-  transition: background 0.3s ease;
-  text-decoration: none;
-  font-weight: bold;
-  font-style: oblique;
-
+  color: black; /* Sets the text color to black */
+  font-size: 18px; /* Sets a readable font size */
+  padding: 10px 15px; /* Adds clickable space around the link */
+  transition: background 0.3s ease; /* Smooth transition for hover effects */
+  text-decoration: none; /* Removes underlining */
+  font-weight: bold; /* Makes the text bold */
+  font-style: oblique; /* Adds a slanted font style */
 }
 
+/* Navbar hover effect */
+/* 
+On hover, the link's background changes subtly, and the text color becomes blue.
+*/
 .navbar .nav-items a:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
-  color: #0d4b8d;
+  background: rgba(255, 255, 255, 0.2); /* Adds a translucent background */
+  border-radius: 5px; /* Rounds the corners */
+  color: #0d4b8d; /* Changes text color to blue */
 }
 
+/* Dropdown Menu */
+/* 
+The `.dropdown-menu` styles the dropdown that appears on hovering over a menu item. 
+It is initially hidden and displays on hover.
+*/
 .dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: white;
-  color: black;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  z-index: 1000;
+  display: none; /* Hides the menu by default */
+  position: absolute; /* Positions it relative to the parent */
+  top: 100%; /* Places it below the parent */
+  left: 0; /* Aligns it to the left */
+  background: white; /* Sets the background color */
+  color: black; /* Sets the text color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+  border-radius: 5px; /* Rounds the corners */
+  z-index: 1000; /* Ensures it appears above other elements */
 }
+
+/* Dropdown menu items */
+/* 
+Styles for individual items in the dropdown.
+*/
 .dropdown-menu li {
-  width: 260px;
-  border-style: outset;
-  list-style-type: none;
+  width: 260px; /* Sets a fixed width for menu items */
+  border-style: outset; /* Adds a slight border effect */
+  list-style-type: none; /* Removes bullets */
 }
 
+/* Dropdown links */
+/* 
+The `.dropdown-menu a` ensures links in the dropdown are clear and interactive.
+*/
 .dropdown-menu a {
-  color: black;
-  padding: 10px 15px;
-  display: block;
-  white-space: nowrap;
+  color: black; /* Sets text color */
+  padding: 10px 15px; /* Adds space around the text */
+  display: block; /* Makes the link cover the entire menu item */
+  white-space: nowrap; /* Prevents text from wrapping */
 }
 
+/* Dropdown hover effect */
+/* 
+On hover, the dropdown menu's link background changes to blue.
+*/
 .dropdown-menu a:hover {
-  background: #005780;
+  background: #005780; /* Changes background color to a dark blue */
 }
 
+/* Show dropdown on hover */
+/* 
+When hovering over the parent `.dropdown`, the `.dropdown-menu` becomes visible.
+*/
 .dropdown:hover .dropdown-menu {
-  display: block;
+  display: block; /* Displays the dropdown menu */
 }
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack navigation items vertically on smaller screens */
+  }
+
+  .nav-items {
+    flex-direction: column; /* Stack navigation items vertically on smaller screens */
+    gap: 10px; /* Reduce spacing between items on smaller screens */
+  }
+}
+/* About */
+.about-Us {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.about-Us-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.about-Us h1{
+  color: #27cdc0;
+  padding: 80px;
+  text-align: center;
+  background-color: lemonchiffon;
+}
+.text-content {
+  max-width: 500px;
+  text-align: left;
+}
+.text-content p{
+  color: #080606;
+}
+.image-content img {
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 /* Contact Us */
 .contact {
   background-color: lightgray;
